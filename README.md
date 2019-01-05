@@ -72,4 +72,4 @@ valid_data = './data/valid' # path to validation images
  
  ![Detected](https://raw.githubusercontent.com/abhijithvnair94/Car-Detection-Model/master/sample/test5_benz/detected_benz.jpg?token=Ap7FYTHy_Smdpb18pf9AYD01gjlJtn0Rks5cMz9lwA%3D%3D)
  
- _NOTE: Some car models wasnt be able to identify(model name and year) becuase of lack of data/less overlap in datasets used._
+ _NOTE: Some car models wasnt be able to identify(model name and year) because of lack of data/less overlap in datasets used._
