@@ -21,7 +21,7 @@ Consists:
 
  [COCO](http://cocodataset.org/#download) dataset is a collection of 123k image of 91 categories, in which I used only the **car** category. [Stanford car dataset](https://ai.stanford.edu/~jkrause/cars/car_dataset.html) consist of 16,185 images of 196 classes of cars.
  
-`car_filter_fromCOCO.py` can be used to extract **car** category from COCO 2014.
+Car category images can be extracted from COCO 2014 using this [repo](https://github.com/abhijithvnair94/Class-Extraction-from-COCO).
 
 For training the Detection Module, I used total 12,753 images, in which 8,580 images were used for tarining purpose and rest for testing. For Recognition Module, I used Stanford car dataset with a split of 50-50 is used for train-test split i.e., 8,144 training images and 8,041 testing images. All the categories is mentioned in `model_names.csv`
 
