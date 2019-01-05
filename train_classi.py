@@ -18,7 +18,6 @@ num_valid_samples = 1595
 verbose = 1
 batch_size = 16
 num_epochs = 100
-patience = 10
 
 if __name__ == '__main__':
     # build a classifier model
@@ -35,7 +34,7 @@ if __name__ == '__main__':
     tensor_board = keras.callbacks.TensorBoard(log_dir='./logs', histogram_freq=0, write_graph=True, write_images=True)
     log_file_path = './logs/training.log'
     csv_logger = CSVLogger(log_file_path, append=False)
-    early_stop = EarlyStopping('val_acc', patience=patience)
+    early_stop = EarlyStopping('val_acc', patience=5)
     reduce_lr = ReduceLROnPlateau('val_acc', factor=0.1, patience=int(patience / 4), verbose=1)
     trained_models_path = './model'
     model_names = trained_models_path + '.{epoch:02d}-{val_acc:.2f}.hdf5'
