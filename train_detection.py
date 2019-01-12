@@ -53,10 +53,6 @@ valid_image_folder = '/home/abhijithmtmt17/essi/car_dataset/images/car_val/'
 valid_annot_folder = '/home/abhijithmtmt17/essi/car_dataset/annotations/car_val_annot/'
 
 
-# Construct the network
-
-
-
 
 # the function to implement the orgnization layer (thanks to github.com/allanzelener/YAD2K)
 def space_to_depth_x2(x):
