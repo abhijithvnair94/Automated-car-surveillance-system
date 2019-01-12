@@ -199,9 +199,6 @@ model = Model([input_image, true_boxes], output)
 
 weight_reader = WeightReader(wt_path)
 
-
-
-
 weight_reader.reset()
 nb_conv = 23
 
