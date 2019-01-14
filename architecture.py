@@ -131,7 +131,7 @@ def architecture(input_image, true_boxes):
     x = LeakyReLU(alpha=0.1)(x)
 
     # Layer 21
-    skip_connection = Conv2D(64, (1,1), strides=(1,1), padding='same', name='conv_21', 		  use_bias=False)(skip_connection)
+    skip_connection = Conv2D(64, (1,1), strides=(1,1), padding='same', name='conv_21', use_bias=False)(skip_connection)
     skip_connection = BatchNormalization(name='norm_21')(skip_connection)
     skip_connection = LeakyReLU(alpha=0.1)(skip_connection)
     skip_connection = Lambda(space_to_depth_x2)(skip_connection)
